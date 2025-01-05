@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Autonomous AI Agents on Solona",
 };
 
-export const dm_sans = DM_Sans({ subsets: ["latin"] });
+const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,

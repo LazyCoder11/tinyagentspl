@@ -3,9 +3,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="min-h-[30vh] mb-40 flex justify-center text-white">
+    <footer className="min-h-[30vh] pb-20 flex justify-center bg-transparent text-white">
       <div className="container mx-auto text-center">
-        <h1 className="my-20 text-[12vw] bg-gradient-to-b from-foreground to-[#5fb9b0]/20 bg-clip-text text-transparent font-space-grotesk">
+        <h1 className="my-20 text-[10vw] bg-gradient-to-b from-foreground to-[#5fb9b0]/20 bg-clip-text text-transparent font-space-grotesk">
             AgentSPL
         </h1>
         {/* Powered by Section */}

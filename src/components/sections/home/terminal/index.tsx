@@ -58,7 +58,7 @@ const Terminal = () => {
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "backOut" }}
+            transition={{ duration: 0.5, delay: 1, ease: "backOut" }}
             className="space-y-2"
           >
             <div className="flex items-center text-gray-400">
@@ -125,7 +125,7 @@ const Terminal = () => {
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: "backOut" }}
+            transition={{ duration: 0.5, delay: 1.3, ease: "backOut" }}
             className="space-y-2"
           >
             <div className="flex items-center font-mono text-gray-400">

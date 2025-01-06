@@ -32,7 +32,7 @@ export default function RootLayout({
             <TopNavbar />
             <Navbar />
             {children}
-            <Footer/>
+            {/* <Footer/> */}
           </LenisWrapper>
         </ThemeProvider>
       </body>

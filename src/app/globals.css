@@ -29,13 +29,12 @@
   background: var(--text-primary); /* Highlight color on hover */
 }
 
-
 @font-face {
   font-family: DMSans;
   src: url("/fonts/DMSans/DMSans-VariableFont_opsz,wght.ttf");
 }
 
-@font-face{
+@font-face {
   font-family: SpaceGrotesk;
   src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf");
 }
@@ -128,31 +127,43 @@
   );
 }
 
-.navbar-shadow{
+.navbar-shadow {
   filter: drop-shadow(0 0 10px var(--foreground));
 }
 
-.hover-link:hover{
+.hover-link:hover {
   filter: drop-shadow(0 0 10px var(--foreground));
 }
 
-.terminal-shadow{
-  box-shadow:  0 0 300px var(--foreground);
+.terminal-shadow {
+  box-shadow: 0 0 300px var(--foreground);
 }
 
 .mac-header {
-  background: linear-gradient(to right, rgba(23, 23, 23, 0.1) 0%, rgba(95, 185, 176, .5) 50%, rgba(23, 23, 23, 0.1) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(23, 23, 23, 0.1) 0%,
+    rgba(95, 185, 176, 0.5) 50%,
+    rgba(23, 23, 23, 0.1) 100%
+  );
   /* filter: blur(40px); */
   /* -webkit-filter: blur(40px); */
   box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.2);
 }
 
 .horizontal-border {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 5%, rgba(255, 255, 255, 0.8) 35%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.8) 65%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(255, 255, 255, 0.8) 35%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0.8) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
-.feature-shadow:hover{
-  box-shadow:  0 0 30px var(--foreground);
+.feature-shadow:hover {
+  box-shadow: 0 0 30px var(--foreground);
 }
 
 .hero-mask {
@@ -160,5 +171,13 @@
     circle farthest-corner at 50% 0%,
     rgba(0, 0, 0, 0.25),
     var(--background)
+  );
+}
+
+.footer {
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50% 0%,
+    var(--background),
+    rgba(95, 185, 176, 0.25)
   );
 }

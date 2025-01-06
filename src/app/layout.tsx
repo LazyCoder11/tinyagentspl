@@ -6,6 +6,7 @@ import { DM_Sans } from "next/font/google";
 import LenisWrapper from "@/components/global/LenisWrapper";
 import Navbar from "@/components/global/navbar";
 import TopNavbar from "@/components/global/top-navbar";
+import Footer from "@/components/global/footer";
 
 export const metadata: Metadata = {
   title: "AgentSPL | Autonomous AI Agents on Solona",
@@ -28,9 +29,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LenisWrapper>
-            <TopNavbar/>
-            <Navbar/>
-            {children}</LenisWrapper>
+            <TopNavbar />
+            <Navbar />
+            {children}
+            <Footer/>
+          </LenisWrapper>
         </ThemeProvider>
       </body>
     </html>

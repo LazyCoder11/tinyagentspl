@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import { dm_sans } from "./public/fonts/font";
 
 const config: Config = {
   darkMode: ["class"],

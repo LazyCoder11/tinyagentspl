@@ -1,10 +1,12 @@
-import Terminal from "@/components/global/terminal";
+import Features from "@/components/sections/home/features";
+import Terminal from "@/components/sections/home/terminal";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
+    <main className="relative min-h-screen hero-video flex flex-col items-center p-3 justify-center overflow-hidden">
       <Terminal />
+      <Features />
     </main>
   );
 }

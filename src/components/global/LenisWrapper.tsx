@@ -9,14 +9,34 @@ const LenisWrapper = ({
   children: React.ReactNode;
 }>) => {
   useEffect(() => {
-    const lenis = new Lenis();
+    // Initialize Lenis with valid options
+    const lenis = new Lenis({
+      duration: 1.2, // Adjust duration for smoother or faster scrolling
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
 
-    function raf(time: any) {
+    const handleScroll = (time: number) => {
       lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+    };
+
+    // Use a more efficient rAF loop
+    let animationFrameId: number;
+
+    const onAnimationFrame = (time: number) => {
+      handleScroll(time);
+      animationFrameId = requestAnimationFrame(onAnimationFrame);
+    };
+
+    animationFrameId = requestAnimationFrame(onAnimationFrame);
+
+    // Cleanup on unmount
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      lenis.destroy(); // Properly destroy Lenis instance
+    };
   }, []);
+
   return <div>{children}</div>;
 };
 

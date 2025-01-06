@@ -57,7 +57,7 @@ const Agent = () => {
   }, []);
 
   return (
-    <div className="text-white min-h-screen flex flex-col items-center px-6 py-10">
+    <div className="text-white min-h-screen flex flex-col items-center md:px-6 py-10">
       {/* Header */}
       <h1
         ref={headerRef}
@@ -68,11 +68,10 @@ const Agent = () => {
       <p className="text-white text-lg mb-10">
         Deploy and test autonomous AI agents on Solana
       </p>
-
       {/* Statistics Section */}
       <div
         ref={statsRef}
-        className="grid grid-cols-3 gap-6 justify-center mb-12"
+        className="grid grid-cols-1 md:grid-cols-3  w-full md:w-fit gap-6 justify-center mb-12"
       >
         {[
           { title: "Interactions", value: "2.4k" },
@@ -92,7 +91,7 @@ const Agent = () => {
       {/* Agent Card */}
       <div
         ref={cardsRef}
-        className="grid grid-cols-1 w-full h-full max-w-7xl md:grid-cols-3 gap-10"
+        className="grid grid-cols-1 w-full h-full md:max-w-7xl md:grid-cols-3 gap-10"
       >
         {[1, 2, 3].map((_, idx) => (
           <MagicCard

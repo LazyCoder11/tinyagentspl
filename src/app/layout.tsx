@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
-import { space_grotesk } from "../../public/fonts/font";
 import { DM_Sans } from "next/font/google";
 import LenisWrapper from "@/components/global/LenisWrapper";
 import Navbar from "@/components/global/navbar";
 import TopNavbar from "@/components/global/top-navbar";
-import Footer from "@/components/global/footer";
 
 export const metadata: Metadata = {
   title: "ReproveSPL | Autonomous AI Agents on Solona",

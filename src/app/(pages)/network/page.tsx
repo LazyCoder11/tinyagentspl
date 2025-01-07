@@ -1,9 +1,14 @@
-import React from 'react'
+import Footer from "@/components/global/footer";
+import Status from "@/components/sections/network/status";
+import React from "react";
 
-const Faqs = () => {
+const Network = () => {
   return (
-    <div>Faqs</div>
-  )
-}
+    <div className="flex hero min-h-screen flex-col items-center justify-between p-24">
+      <Status />
+      <Footer />
+    </div>
+  );
+};
 
-export default Faqs
+export default Network;

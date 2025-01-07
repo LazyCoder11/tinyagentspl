@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { MagicCard } from "@/components/ui/magic-card";
 import Image from "next/image";
@@ -6,6 +6,29 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 const Agent = () => {
+  const agentTypes = [
+    {
+      title: "tinyTest Agent",
+      description:
+        "Test agent for evaluating autonomous task execution and decision-making capabilities on Solana.",
+      image: "/images/upIxz9g.png", // Replace with actual image URL
+      status: "active",
+    },
+    {
+      title: "macroFlow Agent",
+      description:
+        "Automates complex workflows and monitors performance on the blockchain.",
+      image: "/images/img2.png", // Replace with actual image URL
+      status: "active",
+    },
+    {
+      title: "dataSync Agent",
+      description:
+        "Handles synchronization of decentralized data streams in real-time on the blockchain.",
+      image: "/images/images.jpeg", // Replace with actual image URL
+      status: "inactive",
+    },
+  ];
   // Refs for animation
   const headerRef = useRef<HTMLHeadingElement>(null);
   const statsRef = useRef<HTMLDivElement>(null);
@@ -80,7 +103,7 @@ const Agent = () => {
         ].map((stat) => (
           <div
             key={stat.title}
-            className="bg-[#5fb9b0]/70 backdrop-blur-xl border border-foreground px-6 py-4 rounded-lg shadow-lg flex flex-col items-center"
+            className="bg-[#2f8ca3]/70 backdrop-blur-xl border border-white/60 px-6 py-4 rounded-lg shadow-lg flex flex-col items-center"
           >
             <p className="text-xl font-semibold">{stat.value}</p>
             <p className="text-white">{stat.title}</p>
@@ -88,39 +111,41 @@ const Agent = () => {
         ))}
       </div>
 
-      {/* Agent Card */}
       <div
         ref={cardsRef}
         className="grid grid-cols-1 w-full h-full md:max-w-7xl md:grid-cols-3 gap-10"
       >
-        {[1, 2, 3].map((_, idx) => (
+        {agentTypes.map((agent, idx) => (
           <MagicCard
             key={idx}
-            className="cursor-pointer hover:shadow-2xl hover:scale-[1.03] duration-300 transition border border-white/20 backdrop-blur-lg rounded-xl shadow-lg flex-col p-7 items-center justify-center text-4xl"
+            className="cursor-pointer hover:shadow-2xl hover:scale-[1.03] duration-300 transition border border-white/20 backdrop-blur-lg rounded-xl shadow-lg flex-col p-7 items-center justify-between text-4xl"
             gradientColor={"#5FB9B077"}
           >
             <div className="relative mb-4">
               <Image
                 width={500}
                 height={500}
-                src={"/images/upIxz9g.png"} // Replace with actual image URL
-                alt="Agent"
+                src={agent.image}
+                alt={agent.title}
                 className="rounded-lg object-cover aspect-video size-full"
               />
-              <div className="absolute top-3 right-3 bg-green-600 text-sm text-white px-2 py-1 rounded">
-                active
+              <div
+                className={`absolute top-3 right-3 text-sm px-2 py-1 rounded ${
+                  agent.status === "active"
+                    ? "bg-green-600 text-white"
+                    : "bg-red-600 text-white"
+                }`}
+              >
+                {agent.status}
               </div>
             </div>
 
             {/* Agent Details */}
-            <h2 className="text-2xl font-semibold mb-2">tinyTest Agent</h2>
-            <p className="text-gray-300 text-lg mb-4">
-              Test agent for evaluating autonomous task execution and
-              decision-making capabilities on Solana.
-            </p>
+            <h2 className="text-2xl font-semibold mb-2">{agent.title}</h2>
+            <p className="text-gray-300 text-lg mb-4">{agent.description}</p>
 
             {/* Connect Wallet Button */}
-            <button className="w-full text-lg bg-foreground hover:bg-white hover:text-foreground text-white py-2 rounded-lg font-medium transition">
+            <button className="w-full text-base bg-foreground hover:bg-white hover:text-foreground text-white py-2 rounded-lg font-medium transition">
               Connect Wallet
             </button>
           </MagicCard>

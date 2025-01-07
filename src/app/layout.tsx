@@ -9,7 +9,7 @@ import TopNavbar from "@/components/global/top-navbar";
 import Footer from "@/components/global/footer";
 
 export const metadata: Metadata = {
-  title: "AgentSPL | Autonomous AI Agents on Solona",
+  title: "ReproveSPL | Autonomous AI Agents on Solona",
   description: "Autonomous AI Agents on Solona",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm_sans.className} hero`}>
+      <body className={`${dm_sans.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

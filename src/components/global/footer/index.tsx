@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="min-h-[30vh] pb-10 md:pb-20 flex justify-center bg-transparent text-white">
       <div className="container mx-auto md:text-center">
         <h1 className="my-20 text-[14vw] md:text-[10vw] bg-gradient-to-b from-foreground to-[#5fb9b0]/20 bg-clip-text text-transparent font-space-grotesk">
-            AgentSPL
+            ReproveSPL
         </h1>
         {/* Powered by Section */}
         <div className="mb-4">

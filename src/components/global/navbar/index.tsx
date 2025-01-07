@@ -78,8 +78,8 @@ const Navbar = () => {
   return (
     <main className="relative z-[999]">
       <nav
-        ref={navbarRef} // Reference for navbar
-        className="backdrop-blur-xl w-fit h-fit border-foreground border py-4 px-10 md:px-6 shadow-lg shadow-background rounded-full fixed bottom-5 left-1/2 -translate-x-1/2 mx-auto"
+        // ref={navbarRef} // Reference for navbar
+        className="backdrop-blur-lg w-fit h-fit py-4 px-10 md:px-6 shadow-lg shadow-background rounded-full fixed bottom-5 left-1/2 -translate-x-1/2 mx-auto"
       >
         <ul
           ref={linksRef}
@@ -103,7 +103,7 @@ const Navbar = () => {
         </ul>
         <div
           ref={indicatorRef}
-          className="bg-foreground rounded-xl navbar-shadow z-10 absolute h-1 w-12 md:w-16 -top-1 left-4 md:left-0"
+          className="bg-foreground rounded-xl nav-indicator-glow z-10 absolute h-1 w-12 md:w-16 -top-1 left-4 md:left-0"
         ></div>
         <div className="bg-foreground rounded-full opacity-10 -z-10 absolute w-full h-full top-0 left-0"></div>
       </nav>

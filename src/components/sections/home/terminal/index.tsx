@@ -13,8 +13,8 @@ const Terminal = () => {
       text: "to",
     },
     {
-      text: "AgentSPL.",
-      className: "text-[#5fb9b0]",
+      text: "ReproveSPL.",
+      className: "text-[#2f8ca3]",
     },
   ];
   return (
@@ -30,7 +30,7 @@ const Terminal = () => {
             <div className="w-3 h-3 rounded-full bg-green-500" />
           </div>
           <div className="flex-1 text-center text-white text-sm">
-            AgentSPL Terminal
+            ReproveSPL Terminal
           </div>
         </div>
 
@@ -66,7 +66,7 @@ const Terminal = () => {
               <span className="text-blue-400 font-mono">status</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-[#5fb9b0]/20 hover:bg-[#5fb9b0]/50 transition duration-300 border-foreground border p-4 rounded-xl">
+              <div className="bg-[#2f8ca3]/20 hover:bg-[#5fb9b0]/50 transition duration-300 border-foreground border p-4 rounded-xl">
                 <div className="flex items-center justify-between space-x-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 rounded-full bg-green-500" />
@@ -79,7 +79,7 @@ const Terminal = () => {
                   </span>
                 </div>
               </div>
-              <div className="bg-[#5fb9b0]/20 hover:bg-[#5fb9b0]/50 transition duration-300 border-foreground border p-4 rounded-xl">
+              <div className="bg-[#2f8ca3]/20 hover:bg-[#5fb9b0]/50 transition duration-300 border-foreground border p-4 rounded-xl">
                 <div className="flex items-center justify-between space-x-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 rounded-full bg-green-500" />
@@ -92,7 +92,7 @@ const Terminal = () => {
                   </span>
                 </div>
               </div>
-              <div className="bg-[#5fb9b0]/20 hover:bg-[#5fb9b0]/50 transition duration-300 border-foreground border p-4 rounded-xl">
+              <div className="bg-[#2f8ca3]/20 hover:bg-[#5fb9b0]/50 transition duration-300 border-foreground border p-4 rounded-xl">
                 <div className="flex justify-between items-center space-x-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 rounded-full bg-purple-500" />
@@ -105,7 +105,7 @@ const Terminal = () => {
                   </span>
                 </div>
               </div>
-              <div className="bg-[#5fb9b0]/20 hover:bg-[#5fb9b0]/50 transition duration-300 border-foreground border p-4 rounded-xl">
+              <div className="bg-[#2f8ca3]/20 hover:bg-[#5fb9b0]/50 transition duration-300 border-foreground border p-4 rounded-xl">
                 <div className="flex justify-between items-center space-x-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 rounded-full bg-yellow-500" />
@@ -133,25 +133,25 @@ const Terminal = () => {
               <span className="text-blue-400">help</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-[#5fb9b0]/20 border-foreground border p-4 rounded-lg flex justify-between items-center">
+              <div className="bg-[#2f8ca3]/20 border-foreground border p-4 rounded-lg flex justify-between items-center">
                 <div className="text-yellow-400 mr-4 font-mono">$ agents</div>
                 <div className="text-gray-400">List all available agents</div>
               </div>
-              <div className="bg-[#5fb9b0]/20 border-foreground border p-4 rounded-lg flex justify-between items-center">
+              <div className="bg-[#2f8ca3]/20 border-foreground border p-4 rounded-lg flex justify-between items-center">
                 <span className="text-yellow-400 mr-4 font-mono">$ deploy</span>
                 <span className="text-gray-400">Deploy a new agent</span>
               </div>
-              <div className="bg-[#5fb9b0]/20 border-foreground border p-4 rounded-lg flex justify-between items-center">
+              <div className="bg-[#2f8ca3]/20 border-foreground border p-4 rounded-lg flex justify-between items-center">
                 <span className="text-yellow-400 mr-4 font-mono">$ docs</span>
                 <span className="text-gray-400">View documentation</span>
               </div>
-              <div className="bg-[#5fb9b0]/20 border-foreground border p-4 rounded-lg flex justify-between items-center">
+              <div className="bg-[#2f8ca3]/20 border-foreground border p-4 rounded-lg flex justify-between items-center">
                 <span className="text-yellow-400 mr-4 font-mono">
                   $ network
                 </span>
                 <span className="text-gray-400">View network status</span>
               </div>
-              <div className="bg-[#5fb9b0]/20 md:col-span-2 border-foreground border p-4 rounded-lg flex justify-between items-center">
+              <div className="bg-[#2f8ca3]/20 md:col-span-2 border-foreground border p-4 rounded-lg flex justify-between items-center">
                 <span className="text-yellow-400 mr-4 font-mono">$ faq</span>
                 <span className="text-gray-400">
                   Frequently asked questions

@@ -46,14 +46,14 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="https://x.com/tAgentSPL"
+            href="https://x.com/reprove"
             className="hover:text-foreground flex items-center gap-x-2 font-semibold"
           >
             <Twitter />
             Agent Twitter
           </a>
           <a
-            href="https://x.com/tinyAgentSPL"
+            href="https://x.com/danieljnorie"
             className="hover:text-foreground flex items-center gap-x-2 font-semibold"
           >
             <Twitter />
